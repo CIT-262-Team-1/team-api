@@ -10,6 +10,10 @@ app.get('/sean',(req,res)=>{
     res.send("Hello Sean");
 });
 
+app.get('/waheed',(req,res)=>{
+    res.send("Hello Waheed");
+});
+
 app.listen(port,()=>{
     console.log("Listening on port "+port);
 });
