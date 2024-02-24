@@ -26,6 +26,10 @@ app.get('/luke',(req,res)=>{
     res.send("Hello Luke");
 });
 
+app.get('/cameron',(req,res)=>{
+    res.send("Hello Cameron");
+});
+
 app.listen(port,()=>{
     console.log("Listening on port "+port);
 });
