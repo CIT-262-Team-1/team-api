@@ -22,6 +22,10 @@ app.get('/caden',(req,res)=>{
     res.send("Hello Caden");
 });
 
+app.get('/luke',(req,res)=>{
+    res.send("Hello Luke");
+});
+
 app.listen(port,()=>{
     console.log("Listening on port "+port);
 });
