@@ -15,7 +15,7 @@ app.get('/waheed',(req,res)=>{
 });
 
 app.get('/josh',(req,res)=>{
-    res.send("Hello Josh");
+    res.send("Josh");
 });
 
 app.get('/caden',(req,res)=>{
