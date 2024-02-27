@@ -7,7 +7,7 @@ it("Should get /waheed page",async ()=>{
     const name = await response.text();
     console.log("get/ "+name);
     
-    expect(name).toBe("Hello Waheed");
+    expect(name).toBe("Waheed");
 
 
 })
