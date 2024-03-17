@@ -3,9 +3,9 @@ kind: Deployment
 metadata:
   name: waheed-api
 spec:
-  replicase: 1
+  replicas: 1
   selector:
-    matchLables:
+    matchLabels:
       app: waheed-api
   template:
     metadata:
