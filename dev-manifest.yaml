@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,17 +15,16 @@ spec:
     spec:
       containers:
         - name: waheed-api
-        # my image url
           image: us-docker.pkg.dev/cit262-team1-project/waheed-api/api-tests
           ports:
-          - conainerPort: 3000
+            - conainerPort: 3000
           resources:
             limits:
               cpu: ".5"
-              memory: "500Mi"
+              memory: 500Mi
             requests:
               cpu: ".25"
-              memory: "250Mi"
+              memory: 250Mi
           livenessProbe:
             httpGet:
               path: /
@@ -41,5 +41,3 @@ spec:
             failureThreshold: 30
             periodSeconds: 30
             timeoutSeconds: 30
-
-
