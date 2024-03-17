@@ -2,19 +2,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: waheed-api
+  name: api-tests
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: waheed-api
+      app: api-tests
   template:
     metadata:
       labels:
-        app: waheed-api
+        app: api-tests
     spec:
       containers:
-        - name: waheed-api
+        - name: api-tests
           image: us-docker.pkg.dev/cit262-team1-project/waheed-api/api-tests
           ports:
             - conainerPort: 3000
