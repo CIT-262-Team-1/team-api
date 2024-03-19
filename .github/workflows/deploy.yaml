@@ -58,7 +58,7 @@ jobs:
           --build-arg GITHUB_REF="$GITHUB_REF" \
           .
 
-    # Push the Docker image to Google Container Registry
+    #3 Push the Docker image to Google Container Registry
     - name: Publish
       run: |-
         docker push "us-docker.pkg.dev/cit262-team1-project/waheed-api/api-tests"
